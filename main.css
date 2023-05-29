@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: valorant;
+    font-weight: normal;
+    
+}
+
+@font-face {
+    font-family: 'valorant';
+    src: url(./font/Valorant\ Font.ttf);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height:100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./imgs/wallpaper.svg);
+    background-color:rgb(0, 0, 65);
+}
+#self-img{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid #FFD701;
+    transform:rotatey(180deg);
+}
+.perfil-content{
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 8px black;
+    margin-bottom: 30px;
+}
+.perfil-content h1{
+    font-size: 40px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.info-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 15px;
+    padding: 0 20px;
+}
+.info-container__box{
+    color: rgb(2, 6, 24);
+    width: 340px;
+    height: 230px;
+    background-color:#FFD701 ;
+    border-radius: 30px;
+    padding: 30px;
+}
+.info-container__box:hover{
+    transform: translateY(-3px);
+    background-color: #f7e060;
+}
+.info-container__box h2{
+    text-align: center;
+    margin-bottom: 8px;
+}
+#redes{
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+}
+.links-container{
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+}
+.links-container__links{
+    margin-right: 10px;
+    display: flex;
+    background-color:#13121A;
+    border-radius: 50%;
+    padding: 10px 12px;
+}
+.links-container__links:hover{
+    background-color:#2f2e3b;
+    transform: translateY(-5px);
+    transition: 0.4s;
+}
+.icons{
+    width: 20px;
+    width: 25px;
+
+}
+@media screen and (max-width:1089px) {
+    main{
+        height: 100%;
+        padding-top: 80px;
+    }
+    
+}
